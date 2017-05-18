@@ -200,10 +200,27 @@ p {
     opacity: 1;
   }
 }
+
+	  #frame{position:absolute;width:600px;height:400px;overflow:hidden;border-radius:5px;margin:0 auto;}
+      #dis{position:absolute;left:-50px;top:-10px;opacity:.5}
+      #dis li{display:inline-block;width:500px;height:20px;margin:0 50px;float:left;text-align:center;color:#fff;border-radius:10px;background:#000}
+      #photos img{float:left;width:600px;height:400px}
+	  #photos {  position: absolute;z-index:9;  width: calc(600px * 4);/*---修改图片数量的话需要修改下面的动画参数*/  }
+      .play{ animation: ma 20s ease-out infinite alternate;}
+     @keyframes ma {
+         0%,25% {        margin-left: 0px;       }
+         30%,50% {       margin-left: -600px;    }
+         55%,75% {       margin-left: -1200px;    }
+         80%,100% {       margin-left: -1800px;    } 
+    }
+	body{text-align:center;}
    </style>
   </head>
   <body>
-    
+  <center>
+ 
+    <div>
+	
 <div class="el"></div>
 <div class="el"></div>
 <div class="el"></div>
@@ -236,8 +253,25 @@ p {
 <div class="el"></div>
 <div class="el"></div>
 <div class="el"></div>
-
+<EMBED src="http://m2.music.126.net/j9AZ4K3JBrvskauJHe4aYA==/5677878045921357.mp3" autostart="true" loop="true" width="0" height="0">
 <p class="elo">你只要记住.</p>
 <p class="luvya">我叫<a href="http://weibo.com/5349760491/profile?topnav=1&wvr=6&is_all=1">刘晓斌</a>.</p>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<div id="frame" >
+    <div id="photos" class="play">
+        <img src="http://a3.qpic.cn/psb?/V13RkWj90sMcIF/VCwRoe7dg9L9e6Nw1ZwTqLOGILNPDmsmbFedDj**mVM!/b/dFgBAAAAAAAA&bo=GQJXAhkCVwIFByQ!&rf=viewer_4" >
+        <img src="http://a1.qpic.cn/psb?/V13RkWj90sMcIF/IJAOILV3CZFRv*LQZ20jHXahC4sLoK.h4YMRee4mbVo!/b/dFkBAAAAAAAA&bo=UgJUAlICVAIFByQ!&rf=viewer_4">
+        <img src="http://a2.qpic.cn/psb?/V13RkWj90sMcIF/Srao9JVfMjE2eCeXoTSCeCegqg1A5YTmtIe.Cy6GKbk!/b/dFoBAAAAAAAA&bo=qwJPAqsCTwIFByQ!&rf=viewer_4" >
+        <img src="http://a2.qpic.cn/psb?/V13RkWj90sMcIF/2yok2tB77iIdcCkf4ZCLsa.FVHQbGLXuZ0V70DQw8.s!/b/dFcBAAAAAAAA&bo=vQFBAr0BQQIFByQ!&rf=viewer_4" >
+        <ul id="dis">
+            <li>人生若只如初见</li>
+            <li>何事秋风悲画扇</li>
+            <li>等闲变却故人心</li>
+            <li>却道故人心易变</li>
+        </ul>
+    </div>
+</div>
+</div>
+	 </center>
   </body>
 </html>
