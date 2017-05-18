@@ -1,172 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <meta charset="utf-8">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>花押</title>
   <style type="text/css">
  
-
-.el {
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  top: 10px;
-  left: 33%;
-  border-radius: 50%;
-  background-color: #f45f42;
-  motion-offset: 100%;
-  motion-path: path('m 211.619 15.642 c -137.447 -2.4711 -264.638 212.481 105.926 435.341 c 0.405975 -0.730988 1.96899 -0.730988 2.375 0 c 382.518 -230.049 234.665 -451.64 92.626 -434.391 c -55.373 6.7245 -81.504 37.4565 -93.814 63.888 c -12.309 -26.4315 -38.44 -57.1635 -93.813 -63.888 c -4.438 -0.539301 -8.86601 -0.8702 -13.3 -0.95 l 0 -0.0001 Z');
-  animation: move 6s infinite ease-in-out;
+ #all {
+margin:250px auto;
+-webkit-perspective:2500px;
 }
-
-@keyframes move {
-  100% {
-    motion-offset: 0;
-  }
+#imgs div {
+position:absolute;
+left:300px;
+width:235px;
+height:235px;
 }
-
-.el:nth-of-type(1) {
-  animation-delay: 0s;
+#imgs img {
+width:235px;
+height:235px;
+border-radius:15px;
+opacity:0.6;
 }
-
-.el:nth-of-type(2) {
-  animation-delay: 0.2s;
-  background-color: #f44242;
+#imgs {
+-webkit-transform-style:preserve-3d;
+animation:imgs 6s linear infinite;
 }
-
-.el:nth-of-type(3) {
-  animation-delay: .4s;
-  background-color: #ffb2b2;
+#h {
+transform:rotatey(0deg) translatez(200px);
 }
-
-.el:nth-of-type(4) {
-  animation-delay: .6s;
+#qy {
+transform:rotatey(60deg) translatez(200px);
 }
-
-.el:nth-of-type(5) {
-  animation-delay: .8s;
+#qz {
+transform:rotatey(120deg) translatez(200px);
 }
-
-.el:nth-of-type(6) {
-  animation-delay: 1s;
+#hy {
+transform:rotatey(180deg) translatez(200px);
 }
-
-.el:nth-of-type(7) {
-  animation-delay: 1.2s;
+#hz {
+transform:rotatey(240deg) translatez(200px);
 }
-
-.el:nth-of-type(8) {
-  animation-delay: 1.4s;
+#q {
+transform:rotatey(300deg) translatez(200px);
 }
-
-.el:nth-of-type(9) {
-  animation-delay: 1.6s;
+#q1 {
+transform:rotatey(360deg) translatez(200px);
 }
-
-.el:nth-of-type(10) {
-  animation-delay: 1.8s;
+#q2 {
+transform:rotatey(420deg) translatez(200px);
 }
-
-.el:nth-of-type(11) {
-  animation-delay: 2s;
-  background-color: #ffb2b2;
+@keyframes imgs {
+0% {
+transform:rotatey(0deg) rotatex(30deg)
 }
-
-.el:nth-of-type(12) {
-  animation-delay: 2.2s;
+50% {
+transform:rotatey(180deg) rotatex(-30deg)
 }
-
-.el:nth-of-type(13) {
-  animation-delay: 2.4s;
-  background-color: #ffb2b2;
+100% {
+transform:rotatey(360deg)rotatex(30deg)
 }
-
-.el:nth-of-type(14) {
-  animation-delay: 2.6s;
+}#imgs:hover {
+-webkit-animation-play-state:paused;
 }
-
-.el:nth-of-type(15) {
-  animation-delay: 2.8s;
- ?background-color: #772f2f;
+#h img:hover,#qy img:hover,#hy img:hover,#qz img:hover,#hz img:hover,#q img:hover {
+transform:scale(1.5);
 }
-
-.el:nth-of-type(16) {
-  animation-delay: 3s;
+#h img,#qy img,#hy img,#qz img,#hz img,#q img {
+transition:all 0.3s linear;
 }
-
-.el:nth-of-type(17) {
-  animation-delay: 3.2s;
-}
-
-.el:nth-of-type(18) {
-  animation-delay: 3.4s;
-}
-
-.el:nth-of-type(19) {
-  animation-delay: 3.6s;
-  background-color: #ffb2b2;
-}
-
-.el:nth-of-type(20) {
-  animation-delay: 3.8s;
-  background-color: #772f2f;
-}
-
-.el:nth-of-type(21) {
-  animation-delay: 4s;
-}
-
-.el:nth-of-type(22) {
-  animation-delay: 4.2s;
-}
-
-.el:nth-of-type(23) {
-  animation-delay: 4.4s;
-}
-
-.el:nth-of-type(24) {
-  animation-delay: 4.6s;
-}
-
-.el:nth-of-type(25) {
-  animation-delay: 4.8s;
-  background-color: #772f2f;
-}
-
-.el:nth-of-type(26) {
-  animation-delay: 5s;
-}
-
-.el:nth-of-type(27) {
-  animation-delay: 5.2s;
-}
-
-.el:nth-of-type(28) {
-  animation-delay: 5.4s;
-}
-
-.el:nth-of-type(29) {
-  animation-delay: 5.6s;
-}
-
-.el:nth-of-type(30) {
-  animation-delay: 5.8s;
-}
-
-.el:nth-of-type(31) {
-  animation-delay: 6s;
-}
-
-.el:nth-of-type(32) {
-  animation-delay: 6.2s;
-  background-color: #ffb2b2;
-}
+ 
 
 p {
   position: absolute;
  
   left: 45%;
-  font-size: 30px;
+  font-size: 25px;
   color: #f44242;
   opacity: 0;
 }
@@ -196,20 +104,9 @@ p {
   100% {
     opacity: 1;
   }
-}
+} 
 
-	  #frame{position:absolute;width:600px;height:800px;overflow:hidden;border-radius:5px;margin:0 auto;align:center;}
-      #dis{position:absolute;left:-50px;top:-10px;opacity:.5}
-      #dis li{display:inline-block;width:500px;height:20px;margin:0 50px;float:left;text-align:center;color:#fff;border-radius:10px;background:#000}
-      #photos img{float:left;width:600px;height:500px}
-	  #photos {  position: absolute;z-index:9;  width: calc(600px * 4);/*---修改图片数量的话需要修改下面的动画参数*/  }
-      .play{ animation: ma 20s ease-out infinite alternate;}
-     @keyframes ma {
-         0%,25% {        margin-left: 0px;       }
-         30%,50% {       margin-left: -600px;    }
-         55%,75% {       margin-left: -1200px;    }
-         80%,100% {       margin-left: -1800px;    } 
-    }
+
       body {
 	  background-color: #111;
 	  overflow: hidden;
@@ -219,82 +116,829 @@ p {
 		font-size:25px;
 		color: #FF00FF;
 	}
+	
+
+
+/* 小黄人 */
+	/*身体*/
+.wrapper {
+width:300px;
+margin:100px auto;
+}
+.litteH {
+position:relative;
+}
+.bodyH {
+position:absolute;
+width:240px;
+height:400px;
+border:5px solid #000;
+border-radius:115px;
+background:rgb(249,217,70);
+overflow:hidden;
+z-index:2;
+}
+/*裤子*/
+.bodyH .condoleBelt {
+position:absolute;
+}
+.bodyH .trousers {
+position:absolute;
+bottom:0;
+width:100%;
+height:100px;
+border-top:6px solid #000;
+background:rgb(32,116,160);
+}
+.trousers_top {
+width:160px;
+height:60px;
+border:6px solid #000;
+border-bottom:none;
+border-radius:0 0 5px 5px;
+background:rgb(32,116,160);
+position:absolute;
+bottom:100px;
+left:34px;
+}
+/*吊带*/
+.bodyH .condoleBelt .left,.bodyH .condoleBelt .right {
+width:100px;
+height:16px;
+border:5px solid #000;
+background:rgb(32,116,160);
+position:absolute;
+top:-90px;
+left:-35px;
+z-index:2;
+-webkit-transform:rotate(45deg);
+}
+.bodyH .condoleBelt .left {
+top:-88px;
+left:165px;
+-webkit-transform:rotate(-45deg);
+}
+.bodyH .condoleBelt .left:after,.bodyH .condoleBelt .right:after {
+content:'';
+width:8px;
+height:8px;
+border-radius:50%;
+background:#000;
+position:absolute;
+top:4px;
+left:88px;
+}
+.bodyH .condoleBelt .left:after {
+left:5px;
+}
+/*裤子修饰*/
+.pocket {
+width:60px;
+height:45px;
+border:6px solid #000;
+border-radius:0px 0px 25px 25px;
+position:absolute;
+bottom:65px;
+left:84px;
+}
+.line_right {
+width:30px;
+height:30px;
+border-bottom-left-radius:100px;
+border-bottom:6px solid #000;
+border-left:6px solid #000;
+position:absolute;
+left:0;
+bottom:60px;
+-webkit-transform:rotate(-75deg);
+}
+.line_left {
+width:30px;
+height:30px;
+border-bottom-right-radius:100px;
+border-bottom:6px solid #000;
+border-right:6px solid #000;
+position:absolute;
+right:0;
+bottom:63px;
+-webkit-transform:rotate(75deg);
+}
+.line_bottom {
+height:40px;
+border:3px solid #000;
+border-radius:3px;
+position:absolute;
+left:118px;
+bottom:0px;
+}
+/*眼睛*/
+.eyes {
+position:relative;
+z-index:3;
+}
+.eyes .leftEye,.eyes .rightEye {
+width:85px;
+height:85px;
+border-radius:50%;
+border:6px solid #000;
+background:#fff;
+position:absolute;
+top:60px;
+left:27px;
+}
+.eyes .leftEye {
+left:124px;
+}
+.eyes .leftEye .left_blackEye,.eyes .rightEye .right_blackEye {
+width:40px;
+height:40px;
+border-radius:50%;
+background:#000;
+position:absolute;
+top:24px;
+left:22px;
+}
+.eyes .leftEye .left_blackEye .left_white,.eyes .rightEye .right_blackEye .right_white {
+width:20px;
+height:20px;
+border-radius:50%;
+background:#fff;
+position:absolute;
+top:7px;
+left:17px;
+}
+.eyes .leftEye .left_blackEye .left_white {
+top:4px;
+left:17px;
+}
+.eyes .leftEye:after,.eyes .rightEye:after {
+content:'';
+width:28px;
+height:18px;
+background:#000;
+position:absolute;
+left:-30px;
+top:37px;
+-webkit-transform:skewX(20deg) rotate(7deg);
+}
+.eyes .leftEye:after {
+left:89px;
+top:37px;
+-webkit-transform:skewX(-20deg) rotate(-7deg);
+}
+/*嘴巴*/
+.mouse {
+position:relative;
+}
+.mouse .mouse_shape {
+width:55px;
+height:35px;
+border:5px solid #000;
+border-bottom-left-radius:30px;
+background:#fff;
+position:absolute;
+top:175px;
+left:98px;
+z-index:3;
+-webkit-transform:rotate(-35deg);
+}
+.mouse .mouse_shape:after {
+content:'';
+width:70px;
+height:32px;
+border-bottom:5px solid #000;
+border-radius:35px 26px 5px 5px;
+background:red;
+position:absolute;
+top:-16px;
+left:3px;
+-webkit-transform:rotate(34deg);
+}
+.mouse .mouse_shape:after {
+content:'';
+width:70px;
+height:32px;
+border-bottom:5px solid #000;
+border-radius:35px 26px 5px 5px;
+background:rgb(249,217,70);
+position:absolute;
+top:-16px;
+left:3px;
+-webkit-transform:rotate(34deg);
+-webkit-animation:mouse_mask 5s ease-in-out infinite;
+}
+/*手*/
+.hands {
+position:relative;
+}
+.hands .leftHand,.hands .rightHand {
+width:80px;
+height:80px;
+border:6px solid #000;
+border-radius:25px;
+background:rgb(249,217,70);
+position:absolute;
+top:220px;
+left:-23px;
+-webkit-transform:rotate(40deg);
+}
+.hands .leftHand {
+left:182px;
+top:220px;
+-webkit-transform:rotate(-40deg);
+}
+.hands .leftHand:after,.hands .rightHand:after {
+content:'';
+width:6px;
+border:3px solid #000;
+border-radius:3px;
+position:absolute;
+left:13px;
+top:50px;
+-webkit-transform:rotate(90deg);
+}
+.hands .leftHand:after {
+left:53px;
+top:50px;
+-webkit-transform:rotate(-90deg);
+}
+/*脚*/
+.feet {
+position:relative;
+}
+.feet .left_foot,.feet .right_foot {
+width:36px;
+height:50px;
+border-bottom-right-radius:6px;
+border-bottom-left-radius:9px;
+background:#000;
+position:absolute;
+top:406px;
+left:88px;
+-webkit-transform-origin:right top;
+}
+.feet .left_foot {
+border-bottom-right-radius:9px;
+border-bottom-left-radius:6px;
+left:130px;
+-webkit-transform-origin:left top;
+}
+.feet .left_foot:after,.feet .right_foot:after {
+content:'';
+width:60px;
+height:35px;
+border-radius:20px 10px 21px 15px;
+background:#000;
+position:absolute;
+left:-36px;
+top:14.4px;
+-webkit-transform:rotate(5deg);
+}
+.feet .left_foot:after {
+border-radius:10px 20px 15px 21px;
+left:13px;
+-webkit-transform:rotate(-5deg);
+}
+/*头发*/
+.hair {
+position:relative;
+}
+.left_hair_one {
+width:130px;
+height:100px;
+border-radius:50%;
+border-top:8px solid #000;
+position:absolute;
+left:17px;
+top:-17px;
+-webkit-transform:rotate(27deg);
+}
+.left_hair_two {
+width:80px;
+height:80px;
+border-radius:50%;
+border-top:6px solid #000;
+position:absolute;
+left:45px;
+top:-10px;
+-webkit-transform:rotate(15deg);
+}
+/*脚底阴影*/
+.groundShadow {
+width:200px;
+height:2px;
+border-radius:50%;
+background:rgba(0,0,0,0.3);
+box-shadow:0 0 2px 4px rgba(0,0,0,0.3);
+position:relative;
+top:455px;
+left:25px;
+}
+/*小黄人各个部位动态*/
+.left_hair_one {
+-webkit-animation:lefthair 2s ease-in-out infinite;
+}
+@-webkit-keyframes lefthair {
+0%,25%,31%,100% {
+}30% {
+-webkit-transform:rotate(31deg) translate3d(-3px,-1px,0);
+}
+}.eyes .leftEye .left_blackEye,.eyes .rightEye .right_blackEye {
+-webkit-animation:blackeye 5s ease-in infinite;
+}
+@-webkit-keyframes blackeye {
+0%,20%,50%,70%,100% {
+-webkit-transform:translateX(0px);
+}
+30%,40% {
+-webkit-transform:translateX(15px);
+}
+80%,90% {
+-webkit-transform:translateX(-15px);
+}
+}.eyes .leftEye .left_blackEye .left_white,.eyes .rightEye .right_blackEye .right_white {
+-webkit-animation:whiteeye 5s ease-in-out infinite;
+}
+@-webkit-keyframes whiteeye {
+0%,20%,50%,70%,100% {
+-webkit-transform:translateX(0px);
+}
+30%,40% {
+-webkit-transform:translate3d(3px,4px,0);
+}
+80%,90% {
+-webkit-transform:translate3d(-15px,4px,0);
+}
+}.mouse .mouse_shape {
+-webkit-animation:mouse 5s ease-in-out infinite;
+}
+@-webkit-keyframes mouse {
+40%,43% {
+width:45px;
+height:25px;
+top:180px;
+}
+0%,35%,48%,100% {
+width:55px;
+height:35px;
+top:175px;
+-webkit-transform:rotate(-35deg);
+}
+}.mouse .mouse_shape:after {
+-webkit-animation:mouse_mask 5s ease-in-out infinite;
+}
+@-webkit-keyframes mouse_mask {
+40%,43% {
+width:60.5px;
+top:-19.3px;
+left:1.5px;
+}
+0%,35%,48%,100% {
+width:70px;
+top:-16px;
+left:3px;
+-webkit-transform:rotate(33deg);
+}
+}.hands .rightHand {
+-webkit-animation:rightHand .8s ease-in-out infinite;
+}
+@-webkit-keyframes rightHand {
+0%,50%,100% {
+-webkit-transform:rotate(40deg);
+}
+30% {
+-webkit-transform:rotate(37deg) translateX(1px);
+}
+}.hands .leftHand {
+-webkit-animation:leftHand .8s ease-in-out infinite;
+}
+@-webkit-keyframes leftHand {
+0%,50%,100% {
+-webkit-transform:rotate(-40deg);
+}
+80% {
+-webkit-transform:rotate(-37deg) translateX(-1px);
+}
+}.feet .right_foot {
+-webkit-animation:rightfoot .8s ease-in-out infinite;
+}
+@-webkit-keyframes rightfoot {
+0%,50%,100% {
+-webkit-transform:rotate(0deg);
+}
+80% {
+-webkit-transform:rotate(10deg);
+}
+}.feet .left_foot {
+-webkit-animation:leftfoot .8s ease-in-out infinite;
+}
+@-webkit-keyframes leftfoot {
+0%,50%,100% {
+-webkit-transform:rotate(0deg);
+}
+30% {
+-webkit-transform:rotate(-10deg);
+}
+}
+
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,900);
+* {
+box-sizing: inherit;
+-webkit-transition-property: all;
+transition-property: all;
+-webkit-transition-duration: .6s;
+transition-duration: .6s;
+-webkit-transition-timing-function: ease;
+transition-timing-function: ease;
+}
+
+html,
+body {
+box-sizing: border-box;
+height: 100%;
+width: 100%;
+}
+
+body {
+
+font-family: 'Roboto', sans-serif;
+font-weight: 400;
+}
+
+.buttons {
+display: table;
+height: 100%;
+width: 100%;
+}
+
+.container {
+display: table-cell;
+padding: 1em;
+text-align: center;
+vertical-align: middle;
+}
+
+h1 {
+color: #fff;
+font-size: 1.25em;
+font-weight: 900;
+margin: 0 0 2em;
+}
+@media (min-width: 450px) {
+h1 {
+font-size: 1.75em;
+}
+}
+@media (min-width: 760px) {
+h1 {
+font-size: 3.25em;
+}
+}
+@media (min-width: 900px) {
+h1 {
+font-size: 5.25em;
+margin: 0 0 1em;
+}
+}
+
+
+
+.btn {
+color: #fff;
+cursor: pointer;
+display: block;
+font-size: 16px;
+font-weight: 400;
+line-height: 45px;
+margin: 0 auto 2em;
+max-width: 160px;
+position: relative;
+text-decoration: none;
+text-transform: uppercase;
+vertical-align: middle;
+width: 100%;
+}
+@media (min-width: 400px) {
+.btn {
+display: inline-block;
+margin-right: 2.5em;
+}
+.btn:nth-of-type(even) {
+margin-right: 0;
+}
+}
+@media (min-width: 600px) {
+.btn:nth-of-type(even) {
+margin-right: 2.5em;
+}
+.btn:nth-of-type(5) {
+margin-right: 0;
+}
+}
+.btn:hover {
+text-decoration: none;
+}
+
+.btn-1 {
+
+font-weight: 100;
+}
+.btn-1 svg {
+height: 45px;
+left: 0;
+position: absolute;
+top: 0;
+width: 100%;
+}
+.btn-1 rect {
+fill: none;
+stroke: #fff;
+stroke-width: 2;
+stroke-dasharray: 422, 0;
+}
+
+.btn-1:hover {
+background: rgba(225, 51, 45, 0);
+font-weight: 900;
+letter-spacing: 1px;
+}
+.btn-1:hover rect {
+stroke-width: 5;
+stroke-dasharray: 15, 310;
+stroke-dashoffset: 48;
+-webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.btn-2 {
+letter-spacing: 0;
+}
+
+.btn-2:hover,
+.btn-2:active {
+letter-spacing: 5px;
+}
+
+.btn-2:after,
+.btn-2:before {
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+border: 1px solid rgba(255, 255, 255, 0);
+bottom: 0px;
+content: " ";
+display: block;
+margin: 0 auto;
+position: relative;
+-webkit-transition: all 280ms ease-in-out;
+transition: all 280ms ease-in-out;
+width: 0;
+}
+
+.btn-2:hover:after,
+.btn-2:hover:before {
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+border-color: #fff;
+-webkit-transition: width 350ms ease-in-out;
+transition: width 350ms ease-in-out;
+width: 70%;
+}
+
+.btn-2:hover:before {
+bottom: auto;
+top: 0;
+width: 70%;
+}
+
+.btn-3 {
+
+border: 1px solid #da251f;
+box-shadow: 0px 2px 0 #d6251f, 2px 4px 6px #e02a24;
+font-weight: 900;
+letter-spacing: 1px;
+-webkit-transition: all 150ms linear;
+transition: all 150ms linear;
+}
+
+.btn-3:hover {
+
+border: 1px solid rgba(0, 0, 0, 0.05);
+box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2);
+color: #ec817d;
+text-decoration: none;
+text-shadow: -1px -1px 0 #c2211c;
+-webkit-transition: all 250ms linear;
+transition: all 250ms linear;
+}
+
+.btn-4 {
+border: 1px solid;
+overflow: hidden;
+position: relative;
+}
+.btn-4 span {
+z-index: 20;
+}
+.btn-4:after {
+background: #fff;
+content: "";
+height: 155px;
+left: -75px;
+opacity: .2;
+position: absolute;
+top: -50px;
+-webkit-transform: rotate(35deg);
+transform: rotate(35deg);
+-webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+width: 50px;
+z-index: -10;
+}
+
+.btn-4:hover:after {
+left: 120%;
+-webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.btn-5 {
+border: 0 solid;
+box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+outline: 1px solid;
+outline-color: rgba(255, 255, 255, 0.5);
+outline-offset: 0px;
+text-shadow: none;
+-webkit-transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.btn-5:hover {
+border: 1px solid;
+box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+outline-color: rgba(255, 255, 255, 0);
+outline-offset: 15px;
+text-shadow: 1px 1px 2px #427388;
+}
+
+
+
+
+
+
+
    </style>
   </head>
   <body>
-  <div style="position:absolute; height:100%; width:100%; overflow:auto">
-<div>
-	<div class="el"></div>
-	<div class="el"></div>
-	<div class="el"></div>
-	<div class="el"></div>
-	<div class="el"></div>
-	<div class="el"></div>
-	<div class="el"></div>
-	<div class="el"></div>
-	<div class="el"></div>
-	<div class="el"></div>
-	<div class="el"></div>
-	<div class="el"></div>
-	<div class="el"></div>
-	<div class="el"></div>
-	<div class="el"></div>
-	<div class="el"></div>
-	<div class="el"></div>
-	<div class="el"></div>
-	<div class="el"></div>
-	<div class="el"></div>
-	<div class="el"></div>
-	<div class="el"></div>
-	<div class="el"></div>
-	<div class="el"></div>
-	<div class="el"></div>
-	<div class="el"></div>
-	<div class="el"></div>
-	<div class="el"></div>
-	<div class="el"></div>
-	<div class="el"></div>
-	<div class="el"></div>
-	<div class="el"></div>
-	<EMBED src="http://m2.music.126.net/j9AZ4K3JBrvskauJHe4aYA==/5677878045921357.mp3" autostart="true" loop="true" width="0" height="0">
-	
+  <div style="position:absolute;height:100%;width:100%;overflow:auto;">
+  
+  	<div>
+	<p class="elo">&nbsp;我不是小黄人.</p>
+	<p class="luvya">我的名字叫<span>小丸子</span>.</p>
+	</div>
+  
+  <div class="wrapper">
+		<!-- 容器 -->
+		<div class="littleH">
+		<!-- 小黄人 -->
+		<div class="bodyH">
+		<!-- 身体 -->
+		<div class="trousers">
+		<!-- 裤子 -->
+		<div class="condoleBelt">
+		<!-- 吊带 -->
+		<div class="left">
+		</div>
+		<div class="right">
+		</div>
+		</div>
+		<div class="trousers_top">
+		</div>
+		<!-- 裤子突出的矩形部分 -->
+		<div class="pocket">
+		</div>
+		<!-- 裤袋 -->
+		<!-- 三条线 -->
+		<span class="line_left">
+		</span>
+		<span class="line_right">
+		</span>
+		<span class="line_bottom">
+		</span>
+		</div>
+		</div>
+		<div class="hair">
+		<!-- 头发 -->
+		<span class="left_hair_one">
+		</span>
+		<span class="left_hair_two">
+		</span>
+		</div>
+		<div class="eyes">
+		<!-- 眼睛 -->
+		<div class="leftEye">
+		<!-- 左眼 -->
+		<div class="left_blackEye">
+		<div class="left_white">
+		</div>
+		</div>
+		</div>
+		<div class="rightEye">
+		<!-- 右眼 -->
+		<div class="right_blackEye">
+		<div class="right_white">
+		</div>
+		</div>
+		</div>
+		</div>
+		<div class="mouse">
+		<!-- 嘴巴 -->
+		<div class="mouse_shape">
+		</div>
+		</div>
+		<div class="hands">
+		<!-- 双手 -->
+		<div class="leftHand">
+		</div>
+		<div class="rightHand">
+		</div>
+		</div>
+		<div class="feet">
+		<!-- 双脚 -->
+		<div class="left_foot">
+		</div>
+		<div class="right_foot">
+		</div>
+		</div>
+		<div class="groundShadow">
+		</div>
+		<!-- 脚底阴影 -->
+		</div>
 </div>
-<br><br><br><br>
-	<span>怎么办.</span><br>
+  
+  <section class="buttons">
+<div class="container">
+<h1>soul&nbsp;&nbsp;&nbsp;&nbsp;mate</h1>
+<a href="https://user.qzone.qq.com/1139004746/main" class="btn btn-1"><svg><rect x="0" y="0" fill="none" width="100%" height="100%"/></svg>空间</a> 
+<a href="https://www.zhihu.com/" class="btn btn-4"><span>知乎</span></a> 
+<a href="https://www.baidu.com/" class="btn btn-2">百度一下</a> 
+<a href="http://weibo.com/5349760491/profile?topnav=1&wvr=6&is_all=1" class="btn btn-5"><span>微博</span></a> 
+<a href="http://music.163.com/#/user/home?id=311217748" class="btn btn-3">网易云</a> 
+</section>
+  
+
+	<!-- <span>怎么办.</span><br> -->
 	<span>知道你在牧羊</span><br>
 	<span>不知道你在哪座山上 </span><br>
-	<span>怎么办.</span><br>
+<!-- 	<span>怎么办.</span><br> -->
 	<span>知道你在世上</span><br>
 	<span>不知道你在那条路上</span><br>
-	<span>怎么办.</span><br>
+	<!-- <span>怎么办.</span><br> -->
 	<span>三江源头好日子白白流淌</span><br>
-	<span>怎么办.</span><br>
+	<!-- <span>怎么办.</span><br> -->
 	<span>我与你何时重逢在人世上 </span><br>
+	
+	
+	<div id="all">
+	
+		<div id="imgs">
+			<div id="h">
+			<span>却道故人心易变</span>
+			<img src="http://d1.freep.cn/3tb_17051816345810fk585352.jpg"/>
+			</div>
+			<div id="qy">
+			<span>等闲变却故人心</span>
+			<img src="http://d1.freep.cn/3tb_1705181634584dqs585352.jpg"/>
+			</div>
+			<div id="hy">
+			<span>人生若只如初见 </span>
+			<img src="http://d1.freep.cn/3tb_170518163458yuux585352.jpg"/>
+			</div>
+			<div id="qz">
+			<span>何事秋风悲画扇</span>
+			<img src="http://d1.freep.cn/3tb_170518163458x8eh585352.jpg"/>
+			</div>
+			<div id="hz">
+			<span>刘晓斌 </span>
+			<img src="http://d1.freep.cn/3tb_170519021409i8m2585352.jpg"/>
+			</div>
+			<div id="q">
+			<span>无题</span>
+			<img src="http://d1.freep.cn/3tb_170519021413no50585352.jpg"/>
+			</div>
+			
+		</div>
+	</div>
+	
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	
 	<div>
-	<p class="elo">&nbsp;我就是我.</p>
-	<p class="luvya">颜色不一样的<a href="http://weibo.com/5349760491/profile?topnav=1&wvr=6&is_all=1">花火 </a>.</p>
-	</div>
-	<br>
-	<br><br><br><br><br><br>
+
+	<EMBED src="http://m2.music.126.net/j9AZ4K3JBrvskauJHe4aYA==/5677878045921357.mp3" autostart="true" loop="true" width="0" height="0">
 	
-<div>
-	<div id="frame" >
-    <div id="photos" class="play">
-       <img src="http://d1.freep.cn/3tb_17051816345810fk585352.jpg" >
-        <img src="http://d1.freep.cn/3tb_1705181634584dqs585352.jpg" >
-        <img src="http://d1.freep.cn/3tb_170518163458yuux585352.jpg" >
-        <img src="http://d1.freep.cn/3tb_170518163458x8eh585352.jpg" >
-        <ul id="dis">
-            <li>人生若只如初见</li>
-            <li>何事秋风悲画扇</li>
-            <li>等闲变却故人心</li>
-            <li>却道故人心易变</li>
-        </ul>
-    </div>
 	</div>
 	
-</div>
-	
+
 	</div>
 </body>
 </html>
